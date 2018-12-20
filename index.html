@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Barcelona Trivia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Baloo+Paaji|Bubblegum+Sans|Carme|Didact+Gothic|Rammetto+One" rel="stylesheet">
+        <link href="./assets/css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    </head>
+        <body>
+            <!-- creater header -->
+            <div class="container">
+                <div id="welcomeScreen">
+                    <h3>Welcome to</h3>
+                    <div id="BarcelonaLogo">
+                        <!-- insert logo -->
+                        <img src="assets/images/fc-barcelona-logo.png" alt="Barcelona Logo" id="BarcelonaImg">
+                    </div>
+                    <br>
+                    <!-- h2 -->
+                    <h2>Trivia</h2>
+                    <br>
+                    <!--  set font for letter -->
+                    <p class="directions">You will have 45 seconds to answer all questions.</p>
+                    <!--  creater button to start the games -->
+                    <div id="startDiv">
+                        <button type="button" id="startbtn" class="btn btn primary">Click to Start the Games !! </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Section -->
+            <div>
+                <div id="time-container">
+                    <div id="timeLeft"></div>
+                </div> 
+                <div class="Test-container">      
+                    <div id="Test"></div>
+                </div>
+                <!-- creater dive for pre , next & submit button  -->
+                <div id="button-container">
+                    <button id="previous">Previous Question</button>
+                    <button id="next">Next Question</button>
+                    <button id="submit">Submit answers</button>
+                </div>
+                <!--  creater div for result section  -->
+                <div id="results">
+                    <div id="pageBreak"></div>
+                    <div id="numberRight"></div>
+                    <div id="numberWrong"></div>
+                    <div id="numberUnanswered"></div>
+                </div>
+                <!-- insert audio  -->
+                <audio id="myAudio" src="assets/audio/Thương Hoài Ngàn Năm - Quang Lê [Official].mp3"></audio>
+            </div>
+            <!--  link to Js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./assets/javascript/app.js"></script>
+    </body>   
+</html

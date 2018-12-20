@@ -1,0 +1,240 @@
+
+/* background body */
+body { 
+    background-image: url(../images/Barcelona.jpg);
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+     background-color: rgb(245, 221, 87); 
+    height: auto;
+}
+/*  welcome sreen */
+#welcomeScreen {
+    margin-top: 60px;
+}
+/*  logo for background */
+#BarcelonaLogo{
+    text-align: center;
+}
+/* image for background */
+#BarcelonaImg {
+    width: 100px;
+    height: 100px;
+}
+/* start button */
+#startbtn { /*http://css3buttongenerator.com/*/
+    background: rgb(228, 243, 142);
+    margin-top: 15px;
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family:'Baloo Paaji', cursive; 
+    color: #4076db;
+    font-size: 40px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#startbtn:hover {
+  background: #fe724a;
+  background-image: -webkit-linear-gradient(top, #fe724a, #de3607);
+  text-decoration: none;
+}
+/*  h3 */
+h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size:2em;
+    color: gold;
+    font-family: 'Rammetto One', cursive;
+    text-shadow:
+    -10px -1px 0 #000,  
+    -1px -1px 0 #000, 
+    -9px 4px 0 #000, 
+    1px 0px 0 #000;
+}
+/* h2 */
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 2em;
+    color: gold;
+    font-family: 'Rammetto One', cursive;
+    text-shadow:
+    -10px -1px 0 #000,  
+    -1px -1px 0 #000, 
+    -9px 4px 0 #000, 
+    1px 0px 0 #000;
+}
+
+/*  box for direction */
+.directions {
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+    color: rgb(240, 176, 59);
+    margin-bottom: 10px;
+}
+/*  start postion */
+#startDiv {
+    text-align: center;
+    position: relative;
+    -webkit-animation-name: startbutton;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s;  /* Safari 4.0 - 8.0 */   
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-name: startbutton;
+    animation-duration: 3s;    
+    animation-fill-mode: forwards;
+}
+/* moving button */
+@keyframes startbutton {
+    from {top: 200px;}
+    to {top: 0px;}
+}
+
+#startbtn:hover {
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+} 
+/* h1 */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-family: 'Abel',sans-serif;
+} 
+/*  time count */
+#time-container {
+    margin-top: 30px;
+    height: 120px;
+}
+/*  letter for question */
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+/*  letter to answer */
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.answers label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#button-container {
+    text-align: center;
+    margin-top: 120px;
+}
+/* button */
+button {
+    background: #4076db;
+    margin-top: 15px;
+    background-image: -webkit-linear-gradient(top, #4076db, #35c4cc);
+    background-image: -moz-linear-gradient(top, 4076db7, #35c4cc);
+    background-image: -ms-linear-gradient(top, #4076db, #35c4cc);
+    background-image: -o-linear-gradient(top, #4076db, #35c4cc);
+    background-image: linear-gradient(to bottom, #4076db, #35c4cc);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ecdc4a;
+    font-size: 2em;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+/*  button hover */
+button:hover {
+    background: #fe724a;
+    background-image: -webkit-linear-gradient(top, #fe724a, #de3607);
+    background-image: -moz-linear-gradient(top, #fe724a, #de3607);
+    background-image: -ms-linear-gradient(top, #fe724a, #de3607);
+    background-image: -o-linear-gradient(top, #fe724a, #de3607);
+    background-image: linear-gradient(to bottom, #fe724a, #de3607);
+    text-decoration: none;
+}
+/*  buttion postion */
+.Test-container {
+    position: relative;
+    height: 150px;
+    width: 450px;
+    margin: 0 auto; 
+}
+/* test answer */
+#Test {
+    top: 20%;
+    transform: translateX(0px);
+    font-family: 'Carme', sans-serif;
+}
+
+.slide {
+    position: absolute;
+    top: 0px;
+    transition: opacity 0.5s;
+    margin-top: 25px;
+    background-color: #f3bf4f;
+    border-radius: 25px;
+    padding: 15px 15px 0 15px;
+    z-index: 1;
+}
+/* current  */
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+/* result */
+#results {
+    margin-top: 20px;
+    background-color: white;
+}
+/* postion in center */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#Hallelujah {
+    color: #e1fd43;
+    font-family: 'Rammetto One', cursive;
+    text-shadow: -3px -2px 0 #FFF,
+    -4px 0px 0 #FFF,
+    0px -1px 0 #FFF,
+    0px 0px 0 #FFF;
+}
+/* another box */
+#another {
+    color: rgba(222, 183, 7, 0.836);
+    font-family: 'Rammetto One', cursive;
+    text-shadow: -3px -2px 0 #FFF,
+    -4px 0px 0 #FFF,
+    0px -1px 0 #FFF,
+    0px 0px 0 #FFF;
+}
+/* resutl */
+.score {
+    font-size: 2.2em;
+    color: black;
+}
+/* audion */
+#audioControl {
+    text-align: center;
+}
+/* pre button possition */
+#previous {
+    float: left;
+    margin-left: 15%
+}
+/* next button position */
+#next {
+    float: right;
+    margin-right: 15%
+}
